@@ -1,0 +1,35 @@
+body {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+textarea {
+    width: 60%;
+    height: 150px;
+    margin: 10px;
+    background: #111;
+    color: #00ffcc;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    margin: 10px;
+    background: #00ffcc;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs button {
+    margin: 5px;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}

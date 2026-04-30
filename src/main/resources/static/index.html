@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deadlock Prediction System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🧠 Deadlock Prediction System</h1>
+
+<div class="tabs">
+    <button onclick="showTab('deadlock')">Deadlock</button>
+    <button onclick="showTab('banker')">Banker</button>
+</div>
+
+<!-- 🔴 DEADLOCK -->
+<div id="deadlock" class="tab active">
+
+    <h2>Enter Process Dependencies</h2>
+
+    <textarea id="edgesInput" placeholder='Example:
+[
+ {"from":"P1","to":"P2"}
+]'></textarea>
+
+    <br>
+    <button onclick="runDeadlock()">Check Deadlock</button>
+
+    <h3 id="deadlockResult"></h3>
+
+</div>
+
+<!-- 🔵 BANKER -->
+<div id="banker" class="tab">
+
+    <h2>Enter Resource Allocation</h2>
+
+    <textarea id="bankerInput" placeholder='Example:
+{
+ "allocation": [[...]],
+ "max": [[...]],
+ "available": [...]
+}'></textarea>
+
+    <br>
+    <button onclick="runBanker()">Check Safe State</button>
+
+    <h3 id="bankerResult"></h3>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
